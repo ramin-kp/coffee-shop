@@ -2,8 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: "Dana";
+    src: local("Dana"),
+      url("../public/fonts/Dana-Regular.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Dana Medium";
+    src: local("Dana Medium"),
+      url("../public/fonts/Dana-Medium.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Dana Bold";
+    src: local("Dana Bold"),
+      url("../public/fonts/Dana-Bold.woff2") format("woff2");
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: ;
-  src: url();
+  @font-face {
+    font-family: "Morabba Light";
+    src: local("Morabba Light"),
+      url("../public/fonts/Morabba-Light.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Morabba Medium";
+    src: local("Morabba Medium"),
+      url("../public/fonts/Morabba-Medium.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Morabba Bold";
+    src: local("Morabba Bold"),
+      url("../public/fonts/Morabba-Bold.woff2") format("woff2");
+    font-display: swap;
+  }
 }
