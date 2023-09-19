@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  const [mod, setMod] = useState(localStorage.getItem("theme") === "light");
+  useEffect(() => {
+    toggleDarkMod();
+  }, [mod]);
+
+  const toggleDarkMod = () => {
+    if (!mod) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    }
+
+    if (mod) {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  };
   return (
     <header className="fixed top-9 left-0 right-0 flex items-center w-[90%] h-24 px-10 py-5 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">
       <div className="flex items-center justify-between w-full">
@@ -61,10 +77,17 @@ export default function Header() {
               </div>
               <div></div>
             </div>
-            <div>
-              <svg className="w-8 h-8">
-                <use href="#moon"></use>
-              </svg>
+            <div className="cursor-pointer" id="toggle-theme">
+              <div onClick={() => setMod(!mod)}>
+                <svg className="inline-block dark:hidden w-8 h-8">
+                  <use href="#moon"></use>
+                </svg>
+              </div>
+              <div onClick={() => setMod(!mod)}>
+                <svg className="hidden dark:inline-block w-8 h-8">
+                  <use href="#sun"></use>
+                </svg>
+              </div>
             </div>
           </div>
           <span className="block w-px h-14 bg-white/20"></span>
