@@ -6,14 +6,11 @@ export default function Header() {
   useEffect(() => {
     toggleDarkMod();
   }, [mod]);
-
   const toggleDarkMod = () => {
     if (!mod) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
-    }
-
-    if (mod) {
+    } else {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
@@ -42,7 +39,7 @@ export default function Header() {
               >
                 فروشگاه
               </Link>
-              <div className="absolute top-full w-52 p-6 space-y-4  opacity-0 invisible bg-white text-zinc-700 text-base tracking-normal border-t-[3px] border-orange-300 rounded-2xl shadow-normal dark:bg-zinc-700  transition-all group-hover:opacity-100 group-hover:visible dark:text-white child:transition-colors child-hover:text-orange-300 child:w-[100px] child:inline-block ">
+              <div className="absolute top-full right-0 w-52 p-6 space-y-4  opacity-0 invisible bg-white text-zinc-700 text-base tracking-normal border-t-[3px] border-orange-300 rounded-2xl shadow-normal dark:bg-zinc-700  transition-all group-hover:opacity-100 group-hover:visible dark:text-white child:transition-colors child-hover:text-orange-300 child:w-[100px] child:inline-block ">
                 <Link to="#">قهوه ترک</Link>
 
                 <Link to="#">قهوه اسپرسو</Link>
@@ -70,12 +67,22 @@ export default function Header() {
         <div className="flex items-center gap-x-10 text-orange-200 text-xl tracking-tightest">
           <div className="flex items-center gap-x-5">
             <div className="py-3">
-              <div>
-                <svg className=" w-8 h-8 ">
+              <div className="relative group">
+                <svg className=" w-8 h-8 cursor-pointer">
                   <use href="#shoping-card"></use>
                 </svg>
+                <div className="absolute top-full left-0 border-t-[3px] invisible opacity-0 border-t-orange-300 rounded-2xl p-5 w-[400px] bg-white dark:bg-zinc-700 font-DanaMedium tracking-tighter text-xs transition-all group-hover:visible group-hover:opacity-100 ">
+                  <div className="flex items-center justify-between">
+                    <span className=" text-gray-300">1مورد</span>
+                    <div className="flex items-center justify-between text-orange-300">
+                      <Link to="/">مشاهده موارد بیشتر</Link>
+                      <svg className="w-4 h-4">
+                        <use href="#arrow-left"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div></div>
             </div>
             <div className="cursor-pointer" id="toggle-theme">
               <div onClick={() => setMod(!mod)}>
