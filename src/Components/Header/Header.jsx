@@ -23,7 +23,7 @@ export default function Header() {
             <Link to="/">
               <img
                 className="w-14 h-14"
-                src="/images/svgs/app-logo.svg"
+                src="/images/svgs/logo.svg"
                 alt="goldenLog"
               />
             </Link>
@@ -71,7 +71,7 @@ export default function Header() {
                 <svg className=" w-8 h-8 cursor-pointer">
                   <use href="#shoping-card"></use>
                 </svg>
-                <div className="absolute top-full left-0 border-t-[3px] invisible opacity-0 border-t-orange-300 rounded-2xl p-5 w-[400px] bg-white dark:bg-zinc-700 font-DanaMedium tracking-tighter text-xs transition-all group-hover:visible group-hover:opacity-100 ">
+                <div className="absolute top-full left-0 border-t-[3px] invisible opacity-0 border-t-orange-300 rounded-2xl p-5 w-[400px] bg-white dark:bg-zinc-700 shadow-normal font-DanaMedium tracking-tighter text-xs transition-all group-hover:visible group-hover:opacity-100 ">
                   <div className="flex items-center justify-between">
                     <span className=" text-gray-300">1مورد</span>
                     <div className="flex items-center justify-between text-orange-300">
@@ -79,6 +79,29 @@ export default function Header() {
                       <svg className="w-4 h-4">
                         <use href="#arrow-left"></use>
                       </svg>
+                    </div>
+                  </div>
+                  <div className="flex  mt-5 gap-5  border-b border-b-gray-300 dark:border-b-white/10">
+                    <div>
+                      <img
+                        className="w-30 h-30"
+                        src="/images/products/p1.png"
+                        alt="products-img"
+                      />
+                    </div>
+                    <div className="flex flex-col justify-between">
+                      <div className="font-DanaMedium text-lg text-zinc-700 dark:text-white">
+                        قهوه اسپرسو مانوکا 250گرمی
+                      </div>
+                      <div className="mt-6">
+                        <div className="text-xs text-emerald-600 dark:text-emerald-500 tracking-tighter mt-5">
+                          <p>14,500تومان تخفیف</p>
+                        </div>
+                        <div className="flex items-center text-lg text-zinc-700 dark:text-white pb-6">
+                          <p className="font-DanaBold "> 175,000 </p>
+                          <span className="font-Dana text-sm m-1"> تومان </span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
