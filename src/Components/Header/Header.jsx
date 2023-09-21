@@ -157,13 +157,17 @@ export default function Header() {
                   </div>
                 </div>
               </div>
-              <div className="cursor-pointer" id="toggle-theme">
-                <div onClick={() => setMod(!mod)}>
+              <div
+                className="cursor-pointer"
+                id="toggle-theme"
+                onClick={() => setMod(!mod)}
+              >
+                <div>
                   <svg className="inline-block dark:hidden w-8 h-8">
                     <use href="#moon"></use>
                   </svg>
                 </div>
-                <div onClick={() => setMod(!mod)}>
+                <div>
                   <svg className="hidden dark:inline-block w-8 h-8">
                     <use href="#sun"></use>
                   </svg>
@@ -192,7 +196,7 @@ export default function Header() {
 
         {/* nav logo */}
         <div>
-          <svg className="w-[100] h-10 text-orange-300">
+          <svg className="w-[100PX] h-10 text-orange-300">
             <use href="#log-type"></use>
           </svg>
         </div>
@@ -203,7 +207,65 @@ export default function Header() {
             <use href="#shoping-card"></use>
           </svg>
         </div>
+
+        {/* menu */}
+        <div className="fixed top-0 bottom-0 right-0 w-64 px-4 h-screen bg-white dark:bg-zinc-700 z-20">
+          {/* logo header */}
+          <div className="flex justify-between pb-5 mt-3 mb-6 border-b border-gray-100 dark:border-white/10 ">
+            {/* log icon */}
+            <div className="flex gap-3.5">
+              <svg className="w-[41px] h-10 text-orange-300">
+                <use href="#logo"></use>
+              </svg>
+              <svg className="w-[100PX] h-10 text-orange-300">
+                <use href="#log-type"></use>
+              </svg>
+            </div>
+            <div>
+              <svg className="w-6 h-6 text-zinc-600 dark:text-white">
+                <use href="#x-mark"></use>
+              </svg>
+            </div>
+          </div>
+          {/* section bottom */}
+          <div className="border-t border-gray-100 dark:border-white/10 mt-8 pt8 space-y-6 text-orange-300">
+            <div>
+              <Link className="inline-flex items-center gap-2">
+                <svg className="w-8 h-8 rotate-180">
+                  <use href="#arrow-right-on-rectangle"></use>
+                </svg>
+                <span>ورود | ثبت‌نام</span>
+              </Link>
+            </div>
+            <div>
+              <div onClick={() => setMod(!mod)}>
+                <div className="inline-flex items-center gap-2 dark:hidden cursor-pointer">
+                  <svg className="w-8 h-8">
+                    <use href="#moon"></use>
+                  </svg>
+                  <span>تم تاریک</span>
+                </div>
+                <div className="hidden dark:inline-flex items-center gap-2 cursor-pointer">
+                  <svg className="w-8 h-8">
+                    <use href="#sun"></use>
+                  </svg>
+                  <span>تم روشن</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <Link className="inline-flex items-center gap-2">
+                <svg className="w-8 h-8">
+                  <use href="#shoping-card"></use>
+                </svg>
+                <span>سبد خرید</span>
+              </Link>
+            </div>
+            <div></div>
+          </div>
+        </div>
       </div>
+      {/* <div className="overlay bg-black/40 fixed inset-0 w-full h-full z-10"></div> */}
     </>
   );
 }
