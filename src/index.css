@@ -40,3 +40,26 @@ body {
   background-repeat: no-repeat;
   @apply font-Dana bg-gray-100 dark:bg-zinc-800;
 }
+
+@layer components {
+  .submenu__item--active {
+    @apply relative text-orange-300 pr-2.5;
+  }
+  .submenu__item--active::after{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fdba74;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+}

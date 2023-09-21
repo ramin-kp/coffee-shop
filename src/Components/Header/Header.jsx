@@ -40,7 +40,7 @@ export default function Header() {
                 >
                   فروشگاه
                 </Link>
-                <div className="absolute top-full right-0 w-52 p-6 space-y-4  opacity-0 invisible bg-white text-zinc-700 text-base tracking-normal border-t-[3px] border-orange-300 rounded-2xl shadow-normal dark:bg-zinc-700  transition-all delay-75 group-hover:opacity-100 group-hover:visible dark:text-white child:transition-colors child-hover:text-orange-300 child:w-[100px] child:inline-block ">
+                <div className="absolute top-full right-0 w-52 p-6 space-y-4 opacity-0 invisible bg-white text-zinc-700 text-base tracking-normal border-t-[3px] border-orange-300 rounded-2xl shadow-normal dark:bg-zinc-700  transition-all delay-75 group-hover:opacity-100 group-hover:visible dark:text-white child:transition-colors child-hover:text-orange-300 child:w-[100px] child:inline-block ">
                   <Link to="#">قهوه ترک</Link>
 
                   <Link to="#">قهوه اسپرسو</Link>
@@ -54,13 +54,13 @@ export default function Header() {
                   <Link to="#">لوازم جانبی و تجهیزات</Link>
                 </div>
               </li>
-              <li>
+              <li className="hover:text-orange-300">
                 <Link to="#">مقالات</Link>
               </li>
-              <li>
+              <li className="hover:text-orange-300">
                 <Link to="#">درباره ما</Link>
               </li>
-              <li>
+              <li className="hover:text-orange-300">
                 <Link to="#">تماس باما</Link>
               </li>
             </ul>
@@ -238,18 +238,40 @@ export default function Header() {
               </Link>
             </div>
             <ul className="text-zinc-600 dark:text-white space-y-6 child:pr-2.5">
-              <li className="flex items-center justify-between">
-                <Link className="inline-flex gap-2 items-center" to="/">
-                  <svg className="w-5 h-5 ">
-                    <use href="#shoping-card"></use>
-                  </svg>
-                  <span>فروشگاه</span>
-                </Link>
-                <div>
-                  <svg className="w-4 h-4">
-                    <use href="#chevron-down"></use>
-                  </svg>
+              <li className="">
+                <div className="flex items-center justify-between">
+                  <Link className="inline-flex gap-2 items-center" to="/">
+                    <svg className="w-5 h-5 ">
+                      <use href="#shoping-card"></use>
+                    </svg>
+                    <span>فروشگاه</span>
+                  </Link>
+                  <div>
+                    <svg className="w-4 h-4">
+                      <use href="#chevron-down"></use>
+                    </svg>
+                  </div>
                 </div>
+                <ul className="submenu flex flex-col gap-y-3 child:mr-7 text-zinc-600 dark:text-white">
+                  <li className="submenu__item--active mt-3">
+                    <Link to="/">قهوه ترک</Link>
+                  </li>
+                  <li>
+                    <Link to="/">قهوه اسپرسو</Link>
+                  </li>
+                  <li>
+                    <Link to="/">قهوه فوری</Link>
+                  </li>
+                  <li>
+                    <Link to="/">قهوه فرانسه</Link>
+                  </li>
+                  <li>
+                    <Link to="/">قهوه فرانسه</Link>
+                  </li>
+                  <li>
+                    <Link to="/">لوازم جانبی و تجهیزات</Link>
+                  </li>
+                </ul>
               </li>
               <li>
                 <Link className="inline-flex gap-2 items-center" to="/">
