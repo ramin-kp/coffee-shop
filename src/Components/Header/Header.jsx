@@ -208,7 +208,7 @@ export default function Header() {
           </svg>
         </div>
 
-        {/* menu */}
+        {/* nav header */}
         <div className="fixed top-0 bottom-0 right-0 w-64 px-4 h-screen bg-white dark:bg-zinc-700 z-20">
           {/* logo header */}
           <div className="flex justify-between pb-5 mt-3 mb-6 border-b border-gray-100 dark:border-white/10 ">
@@ -227,11 +227,61 @@ export default function Header() {
               </svg>
             </div>
           </div>
-          {/* section bottom */}
-          <div className="border-t border-gray-100 dark:border-white/10 mt-8 pt8 space-y-6 text-orange-300">
+          {/* nav menu */}
+          <div>
+            <div className="flex items-center h-10 pr-2.5 mb-4 bg-orange-200/20 text-orange-300 rounded-md">
+              <Link to="/" className="flex items-center gap-2 ">
+                <svg className="w-5 h-5">
+                  <use href="#home"></use>
+                </svg>
+                <span>صفحه اصلی</span>
+              </Link>
+            </div>
+            <ul className="text-zinc-600 dark:text-white space-y-6 child:pr-2.5">
+              <li className="flex items-center justify-between">
+                <Link className="inline-flex gap-2 items-center" to="/">
+                  <svg className="w-5 h-5 ">
+                    <use href="#shoping-card"></use>
+                  </svg>
+                  <span>فروشگاه</span>
+                </Link>
+                <div>
+                  <svg className="w-4 h-4">
+                    <use href="#chevron-down"></use>
+                  </svg>
+                </div>
+              </li>
+              <li>
+                <Link className="inline-flex gap-2 items-center" to="/">
+                  <svg className="w-5 h-5 ">
+                    <use href="#book"></use>
+                  </svg>
+                  <span>مقالات</span>
+                </Link>
+              </li>
+              <li>
+                <Link className="inline-flex gap-2 items-center" to="/">
+                  <svg className="w-5 h-5 ">
+                    <use href="#group"></use>
+                  </svg>
+                  <span>درباره‌ما</span>
+                </Link>
+              </li>
+              <li>
+                <Link className="inline-flex gap-2 items-center" to="/">
+                  <svg className="w-5 h-5 ">
+                    <use href="#about-me"></use>
+                  </svg>
+                  <span>تماس‌ با‌ ما</span>
+                </Link>
+              </li>
+            </ul>
+          </div>
+          {/* nav footer */}
+          <div className="border-t border-gray-100 dark:border-white/10 mt-8 pt-8 pr-2.5 space-y-6 text-orange-300">
             <div>
               <Link className="inline-flex items-center gap-2">
-                <svg className="w-8 h-8 rotate-180">
+                <svg className="w-5 h-5 rotate-180">
                   <use href="#arrow-right-on-rectangle"></use>
                 </svg>
                 <span>ورود | ثبت‌نام</span>
@@ -240,13 +290,13 @@ export default function Header() {
             <div>
               <div onClick={() => setMod(!mod)}>
                 <div className="inline-flex items-center gap-2 dark:hidden cursor-pointer">
-                  <svg className="w-8 h-8">
+                  <svg className="w-5 h-5">
                     <use href="#moon"></use>
                   </svg>
                   <span>تم تاریک</span>
                 </div>
                 <div className="hidden dark:inline-flex items-center gap-2 cursor-pointer">
-                  <svg className="w-8 h-8">
+                  <svg className="w-5 h-5">
                     <use href="#sun"></use>
                   </svg>
                   <span>تم روشن</span>
@@ -255,13 +305,12 @@ export default function Header() {
             </div>
             <div>
               <Link className="inline-flex items-center gap-2">
-                <svg className="w-8 h-8">
+                <svg className="w-5 h-5">
                   <use href="#shoping-card"></use>
                 </svg>
                 <span>سبد خرید</span>
               </Link>
             </div>
-            <div></div>
           </div>
         </div>
       </div>
