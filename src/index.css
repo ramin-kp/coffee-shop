@@ -69,7 +69,7 @@ body {
     -o-border-radius: 100px;
   }
   .menu {
-    @apply fixed top-0 bottom-0 w-64 px-4 h-screen bg-white dark:bg-zinc-700 z-20 transition-all;
+    @apply fixed top-0 bottom-0 w-64 px-4 h-screen overflow-y-auto bg-white dark:bg-zinc-700 z-20 transition-all;
   }
   .open-menu {
     @apply right-0;
