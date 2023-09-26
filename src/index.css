@@ -42,10 +42,16 @@ body {
 }
 
 @layer components {
+  .submenu {
+    @apply hidden flex-col gap-y-3 child:mr-7 text-zinc-600 dark:text-white;
+  }
+  .submenu--open {
+    @apply flex;
+  }
   .submenu__item--active {
     @apply relative text-orange-300 pr-2.5;
   }
-  .submenu__item--active::after{
+  .submenu__item--active::after {
     content: "";
     display: block;
     width: 4px;
@@ -61,5 +67,20 @@ body {
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
-}
+  }
+  .menu {
+    @apply fixed top-0 bottom-0 w-64 px-4 h-screen bg-white dark:bg-zinc-700 z-20 transition-all;
+  }
+  .open-menu {
+    @apply right-0;
+  }
+  .close-menu {
+    @apply -right-64;
+  }
+  .overlay-bg {
+    @apply hidden opacity-0 bg-black/40 fixed inset-0 w-full h-full z-10 transition-all;
+  }
+  .open-overlay {
+    @apply visible opacity-100;
+  }
 }

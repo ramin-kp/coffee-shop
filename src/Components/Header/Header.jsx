@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   const [mod, setMod] = useState(localStorage.getItem("theme") === "light");
+  const [isShowSubMenu, steIsShowSubMenu] = useState(false);
+  const [isCloseMenu, setIsCloseMenu] = useState(true);
   useEffect(() => {
     toggleDarkMod();
   }, [mod]);
@@ -188,7 +190,7 @@ export default function Header() {
       {/* mobile header */}
       <div className="flex md:hidden items-center justify-between h-16 px-4 bg-white dark:bg-zinc-700">
         {/* nav icon */}
-        <div>
+        <div onClick={() => setIsCloseMenu(!isCloseMenu)}>
           <svg className="w-6 h-6 text-zinc-700 dark:text-white">
             <use href="#bars-3"></use>
           </svg>
@@ -209,7 +211,7 @@ export default function Header() {
         </div>
 
         {/* nav header */}
-        <div className="fixed top-0 bottom-0 right-0 w-64 px-4 h-screen bg-white dark:bg-zinc-700 z-20">
+        <div className={`menu ${isCloseMenu ? "close-menu" : "open-menu"}`}>
           {/* logo header */}
           <div className="flex justify-between pb-5 mt-3 mb-6 border-b border-gray-100 dark:border-white/10 ">
             {/* log icon */}
@@ -221,7 +223,7 @@ export default function Header() {
                 <use href="#log-type"></use>
               </svg>
             </div>
-            <div>
+            <div onClick={() => setIsCloseMenu(!isCloseMenu)}>
               <svg className="w-6 h-6 text-zinc-600 dark:text-white">
                 <use href="#x-mark"></use>
               </svg>
@@ -238,21 +240,25 @@ export default function Header() {
               </Link>
             </div>
             <ul className="text-zinc-600 dark:text-white space-y-6 child:pr-2.5">
-              <li className="">
-                <div className="flex items-center justify-between">
+              <li>
+                <div
+                  className={`flex items-center justify-between ${
+                    isShowSubMenu && "text-orange-300"
+                  }`}
+                >
                   <Link className="inline-flex gap-2 items-center" to="/">
                     <svg className="w-5 h-5 ">
                       <use href="#shoping-card"></use>
                     </svg>
                     <span>فروشگاه</span>
                   </Link>
-                  <div>
-                    <svg className="w-4 h-4">
+                  <div onClick={() => steIsShowSubMenu(!isShowSubMenu)}>
+                    <svg className="w-4 h-4 cursor-pointer">
                       <use href="#chevron-down"></use>
                     </svg>
                   </div>
                 </div>
-                <ul className="submenu flex flex-col gap-y-3 child:mr-7 text-zinc-600 dark:text-white">
+                <ul className={`submenu ${isShowSubMenu && "submenu--open"}`}>
                   <li className="submenu__item--active mt-3">
                     <Link to="/">قهوه ترک</Link>
                   </li>
@@ -336,7 +342,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      {/* <div className="overlay bg-black/40 fixed inset-0 w-full h-full z-10"></div> */}
+      <div className={`overlay-bg ${isCloseMenu && "open-overlay"}`}></div>
     </>
   );
 }
