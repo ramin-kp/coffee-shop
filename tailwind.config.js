@@ -31,6 +31,22 @@ export default {
       spacing: {
         30: "7.5rem",
       },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          lg: "0/625rem",
+        },
+      },
+    },
+    screens: {
+      sm: "640px",
+      
+      md: "768px",
+
+      lg: "1024px",
+
+      xl: "1280px",
     },
   },
   plugins: [
