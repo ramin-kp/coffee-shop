@@ -69,7 +69,7 @@ body {
     -o-border-radius: 100px;
   }
   .menu {
-    @apply fixed top-0 bottom-0 w-64 px-4 h-screen overflow-y-auto bg-white dark:bg-zinc-700 z-20 transition-all;
+    @apply fixed top-0 bottom-0 left-0 w-64 px-4 h-screen overflow-y-auto bg-white dark:bg-zinc-700 z-20 transition-all;
   }
   .open-menu {
     @apply right-0;
@@ -77,10 +77,19 @@ body {
   .close-menu {
     @apply -right-64;
   }
-  .overlay-bg {
-    @apply hidden opacity-0 bg-black/40 fixed inset-0 w-full h-full z-10 transition-all;
+  .overlay {
+    @apply md:hidden invisible opacity-0 bg-black/40 fixed inset-0 w-full h-full z-10 transition-all;
   }
   .open-overlay {
     @apply visible opacity-100;
+  }
+  .shoping-cart {
+    @apply fixed top-0 bottom-0 flex flex-col w-64 h-screen px-4 overflow-y-auto bg-white dark:bg-zinc-700 z-20 transition-all;
+  }
+  .open-cart {
+    @apply left-0;
+  }
+  .close-cart {
+    @apply -left-64;
   }
 }

@@ -5,6 +5,7 @@ export default function Header() {
   const [mod, setMod] = useState(localStorage.getItem("theme") === "light");
   const [isShowSubMenu, steIsShowSubMenu] = useState(false);
   const [isCloseMenu, setIsCloseMenu] = useState(true);
+  const [isCloseCart, setIsCloseCart] = useState(true);
   useEffect(() => {
     toggleDarkMod();
   }, [mod]);
@@ -102,11 +103,12 @@ export default function Header() {
                             <div className="text-xs text-emerald-600 dark:text-emerald-500 tracking-tighter mt-5">
                               <p>14,500تومان تخفیف</p>
                             </div>
-                            <div className="flex items-center text-lg text-zinc-700 dark:text-white pb-6">
-                              <p className="font-DanaBold"> 175,000 </p>
-                              <span className="font-Dana text-sm m-1">
-                                {" "}
-                                تومان{" "}
+                            <div className="flex items-center pb-6 text-lg text-zinc-700">
+                              <p className="font-DanaBold dark:text-white">
+                                175,000
+                              </p>
+                              <span className="font-Dana text-sm dark:text-white m-1">
+                                تومان
                               </span>
                             </div>
                           </div>
@@ -145,7 +147,7 @@ export default function Header() {
                         <div className="font-DanaMedium text-xs tracking-tighter text-gray-300">
                           مبلغ قابل پرداخت
                         </div>
-                        <div className="flex items-center text-zinc-700">
+                        <div className="flex items-center text-zinc-700 dark:text-white">
                           <span className="font-DanaBold text-base ">
                             350,000
                           </span>
@@ -188,9 +190,9 @@ export default function Header() {
       </header>
 
       {/* mobile header */}
-      <div className="flex md:hidden items-center justify-between h-16 px-4 bg-white dark:bg-zinc-700">
+      <div className="flex md:hidden items-center justify-between h-16 px-4  bg-white dark:bg-zinc-700">
         {/* nav icon */}
-        <div onClick={() => setIsCloseMenu(!isCloseMenu)}>
+        <div onClick={() => setIsCloseMenu(false)}>
           <svg className="w-6 h-6 text-zinc-700 dark:text-white">
             <use href="#bars-3"></use>
           </svg>
@@ -204,7 +206,7 @@ export default function Header() {
         </div>
 
         {/* nav icon */}
-        <div>
+        <div onClick={() => setIsCloseCart(false)}>
           <svg className="w-6 h-6 text-zinc-700 dark:text-white">
             <use href="#shoping-card"></use>
           </svg>
@@ -252,7 +254,10 @@ export default function Header() {
                     </svg>
                     <span>فروشگاه</span>
                   </Link>
-                  <div className={`${isShowSubMenu && "rotate-180"}`} onClick={() => steIsShowSubMenu(!isShowSubMenu)}>
+                  <div
+                    className={`${isShowSubMenu && "rotate-180"}`}
+                    onClick={() => steIsShowSubMenu(!isShowSubMenu)}
+                  >
                     <svg className="w-4 h-4 cursor-pointer">
                       <use href="#chevron-down"></use>
                     </svg>
@@ -342,7 +347,104 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className={`overlay-bg ${isCloseMenu && "open-overlay"}`}></div>
+
+      {/* shoping cart */}
+      <div
+        className={`shoping-cart ${isCloseCart ? "close-cart" : "open-cart"}`}
+      >
+        {/* cart header */}
+        <div
+          className={`flex justify-between pb-5 px-5 mt-3 mb-5 border-b border-gray-300 dark:border-white/10 `}
+        >
+          <div onClick={() => setIsCloseCart(true)}>
+            <svg className="w-6 h-6 text-zinc-600 dark:text-white">
+              <use href="#x-mark"></use>
+            </svg>
+          </div>
+          <span className="font-DanaMedium text-zinc-600 dark:text-white ">
+            سبد خرید
+          </span>
+        </div>
+        {/* cart body */}
+        <div>
+          <div className="flex gap-1 mb-5 border-b border-gray-100 dark:border-white/10">
+            <img
+              className="w-[90px] h-[90px]"
+              src="/images/products/p1.png"
+              alt="products-img"
+            />
+
+            <div className="flex flex-col justify-between w-full">
+              <div className="font-DanaMedium text-lg text-zinc-700 dark:text-white line-clamp-1">
+                قهوه اسپرسو مانوکا 250گرمی
+              </div>
+              <div className="">
+                <div className="text-xs text-emerald-600 dark:text-emerald-500 tracking-tighter mt-5">
+                  <p>14,500تومان تخفیف</p>
+                </div>
+                <div className="flex items-center mb-6 text-lg text-zinc-700">
+                  <p className="font-DanaBold dark:text-white">175,000</p>
+                  <span className="font-Dana text-xs dark:text-white m-1">
+                    تومان
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex gap-1 my-5 border-b border-gray-100 dark:border-white/10">
+            <img
+              className="w-[90px] h-[90px]"
+              src="/images/products/p3.png"
+              alt="products-img"
+            />
+
+            <div className="flex flex-col justify-between w-full">
+              <div className="font-DanaMedium text-lg text-zinc-700 dark:text-white line-clamp-1">
+                قهوه اسپرسو مانوکا 250گرمی
+              </div>
+              <div className="">
+                <div className="text-xs text-emerald-600 dark:text-emerald-500 tracking-tighter mt-5">
+                  <p>14,500تومان تخفیف</p>
+                </div>
+                <div className="flex items-center mb-6 text-lg text-zinc-700">
+                  <p className="font-DanaBold dark:text-white">175,000</p>
+                  <span className="font-Dana text-xs dark:text-white m-1">
+                    تومان
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        {/* cart footer */}
+
+        <div class="flex gap-4 mt-auto mb-8 items-end  justify-between">
+          <div class="flex items-center justify-center w-[112px] h-11 text-white font-Dana text-xl bg-teal-600 dark:bg-emerald-500 tracking-tightest rounded-xl">
+            <a href="/">ثبت سفارش</a>
+          </div>
+          <div>
+            <div class="font-DanaMedium text-xs tracking-tighter text-gray-300">
+              مبلغ قابل پرداخت
+            </div>
+            <div class="flex items-center text-zinc-700 dark:text-white">
+              <span class="font-DanaBold text-base ">350,000</span>
+              <span class="text-sm mr-1">تومان</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className={`overlay ${
+          (!isCloseMenu || !isCloseCart) && "open-overlay"
+        }`}
+        onClick={() => {
+          setIsCloseMenu(true);
+          setIsCloseCart(true);
+        }}
+      ></div>
     </>
   );
 }
