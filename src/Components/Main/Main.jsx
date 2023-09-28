@@ -37,6 +37,9 @@ export default function Main() {
           </svg>
         </div>
       </section>
+      <section className="products">
+        
+      </section>
     </main>
   );
 }

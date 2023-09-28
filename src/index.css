@@ -91,10 +91,10 @@ body {
     @apply -left-64;
   }
   .circle {
-    @apply hidden md:flex items-center justify-center border rounded-full  ;
+    @apply hidden md:flex items-center justify-center border rounded-full;
   }
   .circle-main {
-    @apply absolute bottom-0 right-0 left-0 mx-auto translate-y-2/4 ;
+    @apply absolute bottom-0 right-0 left-0 mx-auto translate-y-2/4;
   }
   .circle-lg {
     @apply w-[203px] h-[203px] border-white/25;
@@ -104,5 +104,21 @@ body {
   }
   .circle-sm {
     @apply w-[95px] h-[95px] border-white/80;
+  }
+  @media screen and (min-width: 1280px) {
+    html.dark .products {
+      background-image: url(./images/products.png);
+    }
+    .products {
+      background: linear-gradient(
+          rgba(243, 244, 246, 0.65),
+          rgba(243, 244, 246, 0.65)
+        ),
+        url(./images/products.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 900px;
+    }
   }
 }
