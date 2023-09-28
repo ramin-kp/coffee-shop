@@ -36,9 +36,7 @@
   }
 }
 body {
-  background-image: url(/images/headerBgDesktop.webp);
-  background-repeat: no-repeat;
-  @apply font-Dana bg-gray-100 dark:bg-zinc-800;
+  @apply font-Dana bg-gray-100 dark:bg-zinc-800 h-[2000px];
 }
 
 @layer components {
@@ -91,5 +89,20 @@ body {
   }
   .close-cart {
     @apply -left-64;
+  }
+  .circle {
+    @apply hidden md:flex items-center justify-center border rounded-full  ;
+  }
+  .circle-main {
+    @apply absolute bottom-0 right-0 left-0 mx-auto translate-y-2/4 ;
+  }
+  .circle-lg {
+    @apply w-[203px] h-[203px] border-white/25;
+  }
+  .circle-md {
+    @apply w-[145px] h-[145px] border-white/50;
+  }
+  .circle-sm {
+    @apply w-[95px] h-[95px] border-white/80;
   }
 }

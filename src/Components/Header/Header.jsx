@@ -20,7 +20,7 @@ export default function Header() {
   };
   return (
     <>
-      <header className="hidden fixed top-9 left-0 right-0 md:flex items-center md:w-[98%] lg:w-[90%] h-24 px-5 lg:px-10 py-5 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">
+      <header className="hidden fixed top-9 left-0 right-0 md:flex items-center z-50 md:w-[98%] lg:w-[90%] h-24 px-5 lg:px-10 py-5 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">
         <div className="flex items-center justify-between w-full">
           <nav className="flex h-14 gap-x-6">
             <div>
