@@ -1,4 +1,4 @@
-import Index from "./Components/Index/Index";
+import Index from "./Pages/Index/Index";
 
 const routes = [
   {
