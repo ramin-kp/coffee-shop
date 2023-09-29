@@ -48,15 +48,240 @@ export default function Main() {
             id="#chevron-left-mini"
           />
           {/* products grid */}
-          <div className="grid gap-5 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 child:h-[200px] md:child:h-[460px] pb-24">
-            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal"></div>
-            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal"></div>
-            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal"></div>
-            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal"></div>
-            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal"></div>
-            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal"></div>
-            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal"></div>
-            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal"></div>
+          <div className="grid gap-5 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 pb-24">
+            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal">
+              <div className="relative mb-2 md:mb-5">
+                <img
+                  src="./images/products/p1.png"
+                  className="w-32 md:w-auto"
+                  alt="p 1"
+                />
+                <span className="absolute right-1 top-1 h-[30px] font-DanaBold text-xs/[24px] md:text-base/[34px] text-white dark:text-zinc-700 bg-orange-300 rounded-full px-2.5 md:px-3.5">
+                  12%
+                </span>
+              </div>
+              <h5 className="font-DanaMedium text-sm md:text-xl text-zinc-700 dark:text-white line-clamp-2 ">
+                پودر قهوه اسپرسو مانوکا 250 گرمی خط دوم بصورت تستی 250 گرمی خط
+                دوم بصورت تستی
+              </h5>
+
+              <div className="flex gap-2 md:gap-2.5 items-center mt-1.5 md:mt-2.5">
+                <div className=" text-teal-600 dark:text-emerald-500">
+                  <span className="font-DanaBold text-sm md:text-xl">
+                    220,000
+                  </span>
+                  <span className="text-sm tracking-tighter"> تومان</span>
+                </div>
+                <div className="offer">
+                  <span className="text-xs md:text-xl">175,000</span>
+                  <span className="hidden xl:inline sm:text-sm">تومان</span>
+                </div>
+              </div>
+            </div>
+            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal">
+              <div className="relative mb-2 md:mb-5">
+                <img
+                  src="./images/products/p2.png"
+                  className="w-32 md:w-auto"
+                  alt="p 1"
+                />
+                <span className="absolute right-1 top-1 h-[30px] font-DanaBold text-xs/[24px] md:text-base/[34px] text-white dark:text-zinc-700 bg-orange-300 rounded-full px-2.5 md:px-3.5">
+                  12%
+                </span>
+              </div>
+              <h5 className="font-DanaMedium text-sm md:text-xl text-zinc-700 dark:text-white line-clamp-2 ">
+                پودر قهوه اسپرسو مانوکا 250 گرمی خط دوم بصورت تستی 250 گرمی خط
+                دوم بصورت تستی
+              </h5>
+
+              <div className="flex gap-2 md:gap-2.5 items-center mt-1.5 md:mt-2.5">
+                <div className=" text-teal-600 dark:text-emerald-500">
+                  <span className="font-DanaBold text-sm md:text-xl">
+                    220,000
+                  </span>
+                  <span className="text-sm tracking-tighter"> تومان</span>
+                </div>
+                <div className="offer">
+                  <span className="text-xs md:text-xl">175,000</span>
+                  <span className="hidden xl:inline sm:text-sm">تومان</span>
+                </div>
+              </div>
+            </div>
+            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal">
+              <div className="relative mb-2 md:mb-5">
+                <img
+                  src="./images/products/p8.png"
+                  className="w-32 md:w-auto"
+                  alt="p 1"
+                />
+                <span className="absolute right-1 top-1 h-[30px] font-DanaBold text-xs/[24px] md:text-base/[34px] text-white dark:text-zinc-700 bg-orange-300 rounded-full px-2.5 md:px-3.5">
+                  12%
+                </span>
+              </div>
+              <h5 className="font-DanaMedium text-sm md:text-xl text-zinc-700 dark:text-white line-clamp-2 ">
+                پودر قهوه اسپرسو مانوکا 250 گرمی خط دوم بصورت تستی 250 گرمی خط
+                دوم بصورت تستی
+              </h5>
+
+              <div className="flex gap-2 md:gap-2.5 items-center mt-1.5 md:mt-2.5">
+                <div className=" text-teal-600 dark:text-emerald-500">
+                  <span className="font-DanaBold text-sm md:text-xl">
+                    220,000
+                  </span>
+                  <span className="text-sm tracking-tighter"> تومان</span>
+                </div>
+                <div className="offer">
+                  <span className="text-xs md:text-xl">175,000</span>
+                  <span className="hidden xl:inline sm:text-sm">تومان</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal">
+              <div className="relative mb-2 md:mb-5">
+                <img
+                  src="./images/products/p4.png"
+                  className="w-32 md:w-auto"
+                  alt="p 1"
+                />
+                <span className="absolute right-1 top-1 h-[30px] font-DanaBold text-xs/[24px] md:text-base/[34px] text-white dark:text-zinc-700 bg-orange-300 rounded-full px-2.5 md:px-3.5">
+                  12%
+                </span>
+              </div>
+              <h5 className="font-DanaMedium text-sm md:text-xl text-zinc-700 dark:text-white line-clamp-2 ">
+                پودر قهوه اسپرسو مانوکا 250 گرمی خط دوم بصورت تستی 250 گرمی خط
+                دوم بصورت تستی
+              </h5>
+
+              <div className="flex gap-2 md:gap-2.5 items-center mt-1.5 md:mt-2.5">
+                <div className=" text-teal-600 dark:text-emerald-500">
+                  <span className="font-DanaBold text-sm md:text-xl">
+                    220,000
+                  </span>
+                  <span className="text-sm tracking-tighter"> تومان</span>
+                </div>
+                <div className="offer">
+                  <span className="text-xs md:text-xl">175,000</span>
+                  <span className="hidden xl:inline sm:text-sm">تومان</span>
+                </div>
+              </div>
+            </div>
+            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal">
+              <div className="relative mb-2 md:mb-5">
+                <img
+                  src="./images/products/p5.png"
+                  className="w-32 md:w-auto"
+                  alt="p 1"
+                />
+                <span className="absolute right-1 top-1 h-[30px] font-DanaBold text-xs/[24px] md:text-base/[34px] text-white dark:text-zinc-700 bg-orange-300 rounded-full px-2.5 md:px-3.5">
+                  12%
+                </span>
+              </div>
+              <h5 className="font-DanaMedium text-sm md:text-xl text-zinc-700 dark:text-white line-clamp-2 ">
+                پودر قهوه اسپرسو مانوکا 250 گرمی خط دوم بصورت تستی 250 گرمی خط
+                دوم بصورت تستی
+              </h5>
+
+              <div className="flex gap-2 md:gap-2.5 items-center mt-1.5 md:mt-2.5">
+                <div className=" text-teal-600 dark:text-emerald-500">
+                  <span className="font-DanaBold text-sm md:text-xl">
+                    220,000
+                  </span>
+                  <span className="text-sm tracking-tighter"> تومان</span>
+                </div>
+                <div className="offer">
+                  <span className="text-xs md:text-xl">175,000</span>
+                  <span className="hidden xl:inline sm:text-sm">تومان</span>
+                </div>
+              </div>
+            </div>
+            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal">
+              <div className="relative mb-2 md:mb-5">
+                <img
+                  src="./images/products/p6.png"
+                  className="w-32 md:w-auto"
+                  alt="p 1"
+                />
+                <span className="absolute right-1 top-1 h-[30px] font-DanaBold text-xs/[24px] md:text-base/[34px] text-white dark:text-zinc-700 bg-orange-300 rounded-full px-2.5 md:px-3.5">
+                  12%
+                </span>
+              </div>
+              <h5 className="font-DanaMedium text-sm md:text-xl text-zinc-700 dark:text-white line-clamp-2 ">
+                پودر قهوه اسپرسو مانوکا 250 گرمی خط دوم بصورت تستی 250 گرمی خط
+                دوم بصورت تستی
+              </h5>
+
+              <div className="flex gap-2 md:gap-2.5 items-center mt-1.5 md:mt-2.5">
+                <div className=" text-teal-600 dark:text-emerald-500">
+                  <span className="font-DanaBold text-sm md:text-xl">
+                    220,000
+                  </span>
+                  <span className="text-sm tracking-tighter"> تومان</span>
+                </div>
+                <div className="offer">
+                  <span className="text-xs md:text-xl">175,000</span>
+                  <span className="hidden xl:inline sm:text-sm">تومان</span>
+                </div>
+              </div>
+            </div>
+            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal">
+              <div className="relative mb-2 md:mb-5">
+                <img
+                  src="./images/products/p7.png"
+                  className="w-32 md:w-auto"
+                  alt="p 1"
+                />
+                <span className="absolute right-1 top-1 h-[30px] font-DanaBold text-xs/[24px] md:text-base/[34px] text-white dark:text-zinc-700 bg-orange-300 rounded-full px-2.5 md:px-3.5">
+                  12%
+                </span>
+              </div>
+              <h5 className="font-DanaMedium text-sm md:text-xl text-zinc-700 dark:text-white line-clamp-2 ">
+                پودر قهوه اسپرسو مانوکا 250 گرمی خط دوم بصورت تستی 250 گرمی خط
+                دوم بصورت تستی
+              </h5>
+
+              <div className="flex gap-2 md:gap-2.5 items-center mt-1.5 md:mt-2.5">
+                <div className=" text-teal-600 dark:text-emerald-500">
+                  <span className="font-DanaBold text-sm md:text-xl">
+                    220,000
+                  </span>
+                  <span className="text-sm tracking-tighter"> تومان</span>
+                </div>
+                <div className="offer">
+                  <span className="text-xs md:text-xl">175,000</span>
+                  <span className="hidden xl:inline sm:text-sm">تومان</span>
+                </div>
+              </div>
+            </div>
+            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal">
+              <div className="relative mb-2 md:mb-5">
+                <img
+                  src="./images/products/p3.png"
+                  className="w-32 md:w-auto"
+                  alt="p 1"
+                />
+                <span className="absolute right-1 top-1 h-[30px] font-DanaBold text-xs/[24px] md:text-base/[34px] text-white dark:text-zinc-700 bg-orange-300 rounded-full px-2.5 md:px-3.5">
+                  12%
+                </span>
+              </div>
+              <h5 className="font-DanaMedium text-sm md:text-xl text-zinc-700 dark:text-white line-clamp-2 ">
+                پودر قهوه اسپرسو مانوکا 250 گرمی خط دوم بصورت تستی 250 گرمی خط
+                دوم بصورت تستی
+              </h5>
+
+              <div className="flex gap-2 md:gap-2.5 items-center mt-1.5 md:mt-2.5">
+                <div className=" text-teal-600 dark:text-emerald-500">
+                  <span className="font-DanaBold text-sm md:text-xl">
+                    220,000
+                  </span>
+                  <span className="text-sm tracking-tighter"> تومان</span>
+                </div>
+                <div className="offer">
+                  <span className="text-xs md:text-xl">175,000</span>
+                  <span className="hidden xl:inline sm:text-sm">تومان</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

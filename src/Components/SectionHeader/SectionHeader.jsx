@@ -10,7 +10,7 @@ export default function SectionHeader({
 }) {
   return (
     <div className="flex items-end justify-between mb-5 md:mb-12">
-      <div>
+      <div className="text-zinc-700 dark:text-white">
         <h3 className="section-title">{titleHeader}</h3>
         <span className="section-usb-title">{subTitleHeader}</span>
       </div>
