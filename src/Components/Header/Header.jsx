@@ -420,17 +420,17 @@ export default function Header() {
         </div>
         {/* cart footer */}
 
-        <div class="flex gap-4 mt-auto mb-8 items-end  justify-between">
-          <div class="flex items-center justify-center w-[112px] h-11 text-white font-Dana text-xl bg-teal-600 dark:bg-emerald-500 tracking-tightest rounded-xl">
+        <div className="flex gap-4 mt-auto mb-8 items-end  justify-between">
+          <div className="flex items-center justify-center w-[112px] h-11 text-white font-Dana text-xl bg-teal-600 dark:bg-emerald-500 tracking-tightest rounded-xl">
             <a href="/">ثبت سفارش</a>
           </div>
           <div>
-            <div class="font-DanaMedium text-xs tracking-tighter text-gray-300">
+            <div className="font-DanaMedium text-xs tracking-tighter text-gray-300">
               مبلغ قابل پرداخت
             </div>
-            <div class="flex items-center text-zinc-700 dark:text-white">
-              <span class="font-DanaBold text-base ">350,000</span>
-              <span class="text-sm mr-1">تومان</span>
+            <div className="flex items-center text-zinc-700 dark:text-white">
+              <span className="font-DanaBold text-base ">350,000</span>
+              <span className="text-sm mr-1">تومان</span>
             </div>
           </div>
         </div>

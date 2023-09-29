@@ -1,4 +1,5 @@
 import React from "react";
+import SectionHeader from "../SectionHeader/SectionHeader";
 
 export default function Main() {
   return (
@@ -37,8 +38,14 @@ export default function Main() {
           </svg>
         </div>
       </section>
-      <section className="products">
-        
+      <section className="products mt-48">
+        <SectionHeader
+          titleHeader="جدیدترین محصولات"
+          subTitleHeader="فرآوری شده از دانه قهوه"
+          desTitle="مشاهده همه محصولات"
+          mobTitle="مشاهده همه "
+          id="#chevron-left-mini"
+        />
       </section>
     </main>
   );
