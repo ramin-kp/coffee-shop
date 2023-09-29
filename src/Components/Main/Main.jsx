@@ -38,7 +38,7 @@ export default function Main() {
           </svg>
         </div>
       </section>
-      <section className="products mt-48">
+      <section className="products pt-8 md:pt-24  lg:pt-48">
         <SectionHeader
           titleHeader="جدیدترین محصولات"
           subTitleHeader="فرآوری شده از دانه قهوه"

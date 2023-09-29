@@ -80,8 +80,8 @@ export default function Header() {
                       <span className=" text-gray-300">1مورد</span>
                       <div className="flex items-center justify-between  text-orange-300">
                         <Link to="/">مشاهده موارد بیشتر</Link>
-                        <svg className="w-4 h-4">
-                          <use href="#arrow-left"></use>
+                        <svg className="w-5 h-5">
+                          <use href="#chevron-left-mini"></use>
                         </svg>
                       </div>
                     </div>
@@ -227,7 +227,7 @@ export default function Header() {
             </div>
             <div onClick={() => setIsCloseMenu(!isCloseMenu)}>
               <svg className="w-6 h-6 text-zinc-600 dark:text-white">
-                <use href="#x-mark"></use>
+                <use href="#x-mark-mini"></use>
               </svg>
             </div>
           </div>
@@ -358,7 +358,7 @@ export default function Header() {
         >
           <div onClick={() => setIsCloseCart(true)}>
             <svg className="w-6 h-6 text-zinc-600 dark:text-white">
-              <use href="#x-mark"></use>
+              <use href="#x-mark-mini"></use>
             </svg>
           </div>
           <span className="font-DanaMedium text-zinc-600 dark:text-white ">
@@ -416,7 +416,6 @@ export default function Header() {
               </div>
             </div>
           </div>
-          
         </div>
         {/* cart footer */}
 
