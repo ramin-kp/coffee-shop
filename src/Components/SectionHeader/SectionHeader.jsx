@@ -9,7 +9,7 @@ export default function SectionHeader({
   id,
 }) {
   return (
-    <div className="container flex items-end justify-between">
+    <div className="flex items-end justify-between mb-5 md:mb-12">
       <div>
         <h3 className="section-title">{titleHeader}</h3>
         <span className="section-usb-title">{subTitleHeader}</span>

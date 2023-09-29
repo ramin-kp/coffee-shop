@@ -38,14 +38,27 @@ export default function Main() {
           </svg>
         </div>
       </section>
-      <section className="products pt-8 md:pt-24  lg:pt-48">
-        <SectionHeader
-          titleHeader="جدیدترین محصولات"
-          subTitleHeader="فرآوری شده از دانه قهوه"
-          desTitle="مشاهده همه محصولات"
-          mobTitle="مشاهده همه "
-          id="#chevron-left-mini"
-        />
+      <section className="products pt-8 md:pt-24 lg:pt-48">
+        <div className="container">
+          <SectionHeader
+            titleHeader="جدیدترین محصولات"
+            subTitleHeader="فرآوری شده از دانه قهوه"
+            desTitle="مشاهده همه محصولات"
+            mobTitle="مشاهده همه "
+            id="#chevron-left-mini"
+          />
+          {/* products grid */}
+          <div className="grid gap-5 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 child:h-[200px] md:child:h-[460px] pb-24">
+            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal"></div>
+            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal"></div>
+            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal"></div>
+            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal"></div>
+            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal"></div>
+            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal"></div>
+            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal"></div>
+            <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal"></div>
+          </div>
+        </div>
       </section>
     </main>
   );
