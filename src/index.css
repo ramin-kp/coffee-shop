@@ -143,3 +143,9 @@ body {
     background: #ef4444;
   }
 }
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
