@@ -1,6 +1,7 @@
 import React from "react";
 import SectionHeader from "../SectionHeader/SectionHeader";
-import CategoryBaner from "../CategoryBaner/CategoryBaner";
+import CategoryBanner from "../CategoryBanner/CategoryBanner";
+import ProductCategory from "../ProductCategory/ProductCategory";
 
 export default function Main() {
   return (
@@ -494,7 +495,8 @@ export default function Main() {
           </div>
         </div>
       </section>
-      <CategoryBaner />
+      <CategoryBanner />
+      <ProductCategory />
     </main>
   );
 }

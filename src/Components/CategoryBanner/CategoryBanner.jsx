@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function CategoryBaner() {
+export default function CategoryBanner() {
   return (
     <section>
       <div className="container grid gap-5 grid-cols-1 md:grid-cols-2 mt-8 mb-10 md:my-20 text-white">
