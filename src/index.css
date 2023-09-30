@@ -142,6 +142,24 @@ body {
     top: 13px;
     background: #ef4444;
   }
+  .category-banner--item1 {
+    background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0.6) 33.85%,
+        rgba(0, 0, 0, 0.1) 100%
+      ),
+      url(./images/categories/category-right.jpg);
+    background-size: cover;
+  }
+  .category-banner--item2 {
+    background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0.8) 33.85%,
+        rgba(0, 0, 0, 0.1) 100%
+      ),
+      url(./images/categories/category-left.jpg);
+    background-size: cover;
+  }
 }
 
 @layer utilities {

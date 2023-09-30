@@ -1,5 +1,6 @@
 import React from "react";
 import SectionHeader from "../SectionHeader/SectionHeader";
+import CategoryBaner from "../CategoryBaner/CategoryBaner";
 
 export default function Main() {
   return (
@@ -127,7 +128,6 @@ export default function Main() {
                   </span>
                   <span className="text-sm tracking-tighter"> تومان</span>
                 </div>
-
               </div>
               <div className="flex items-center justify-between mt-2.5">
                 <div className="flex gap-2.5 md:gap-3 items-center">
@@ -174,12 +174,9 @@ export default function Main() {
               </h5>
 
               <div className="flex gap-2 md:gap-2.5 items-center mt-1.5 md:mt-2.5">
-                <div className=" text-teal-600 dark:text-emerald-500">
-                  <span className="font-DanaBold text-sm md:text-xl">
-                    400,000
-                  </span>
-                  <span className="text-sm tracking-tighter"> تومان</span>
-                </div>
+                <span className="font-DanaBold text-red-400 text-sm md:text-xl">
+                  موجود نیست
+                </span>
               </div>
               <div className="flex items-center justify-between mt-2.5">
                 <div className="flex gap-2.5 md:gap-3 items-center">
@@ -497,6 +494,7 @@ export default function Main() {
           </div>
         </div>
       </section>
+      <CategoryBaner />
     </main>
   );
 }
