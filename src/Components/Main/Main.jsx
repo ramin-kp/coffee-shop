@@ -49,7 +49,7 @@ export default function Main() {
             id="#chevron-left-mini"
           />
           {/* products grid */}
-          <div className="grid gap-5 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 pb-24">
+          <div className="grid gap-5 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
             <div className="p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-normal">
               <div className="relative mb-2 md:mb-5">
                 <img

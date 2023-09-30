@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function CategoryBaner() {
   return (
     <section>
-      <div className="container grid gap-5 grid-cols-1 md:grid-cols-2 my-20 text-white">
+      <div className="container grid gap-5 grid-cols-1 md:grid-cols-2 mt-8 mb-10 md:my-20 text-white">
         <Link
           to="#"
           className="category-banner--item1 flex flex-col justify-center h-[142px] md:h-[248px] pr-7 md:pr-12 rounded-2xl bg-zinc-700"
