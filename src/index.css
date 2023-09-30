@@ -148,7 +148,7 @@ body {
         rgba(0, 0, 0, 0.6) 33.85%,
         rgba(0, 0, 0, 0.1) 100%
       ),
-      url(./images/categories/category-right.jpg);
+      url(/images/categories/category-right.jpg);
     background-size: cover;
   }
   .category-banner--item2 {
@@ -157,7 +157,7 @@ body {
         rgba(0, 0, 0, 0.8) 33.85%,
         rgba(0, 0, 0, 0.1) 100%
       ),
-      url(./images/categories/category-left.jpg);
+      url(/images/categories/category-left.jpg);
     background-size: cover;
   }
 }
