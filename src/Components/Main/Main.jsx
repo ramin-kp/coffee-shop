@@ -3,6 +3,7 @@ import SectionHeader from "../SectionHeader/SectionHeader";
 import CategoryBanner from "../CategoryBanner/CategoryBanner";
 import ProductCategory from "../ProductCategory/ProductCategory";
 import BestSellingProducts from "../BestSellingProducts/BestSellingProducts";
+import CoffeeClub from "../CoffeeClub/CoffeeClub";
 
 export default function Main() {
   return (
@@ -499,6 +500,7 @@ export default function Main() {
       <CategoryBanner />
       <ProductCategory />
       <BestSellingProducts />
+      <CoffeeClub />
     </main>
   );
 }

@@ -8,8 +8,6 @@ export default function SectionHeader({
   mobTitle,
   id,
   slider,
-  next,
-  prev,
 }) {
   return (
     <div className="flex items-end justify-between mb-5 md:mb-12">
