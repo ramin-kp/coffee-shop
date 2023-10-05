@@ -4,6 +4,7 @@ import CategoryBanner from "../CategoryBanner/CategoryBanner";
 import ProductCategory from "../ProductCategory/ProductCategory";
 import BestSellingProducts from "../BestSellingProducts/BestSellingProducts";
 import CoffeeClub from "../CoffeeClub/CoffeeClub";
+import LastBlogs from "../LastBlogs/LastBlogs";
 
 export default function Main() {
   return (
@@ -501,6 +502,7 @@ export default function Main() {
       <ProductCategory />
       <BestSellingProducts />
       <CoffeeClub />
+      <LastBlogs />
     </main>
   );
 }
