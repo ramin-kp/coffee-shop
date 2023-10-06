@@ -5,6 +5,7 @@ import ProductCategory from "../ProductCategory/ProductCategory";
 import BestSellingProducts from "../BestSellingProducts/BestSellingProducts";
 import CoffeeClub from "../CoffeeClub/CoffeeClub";
 import LastBlogs from "../LastBlogs/LastBlogs";
+import ContentUs from "../ContentUs/ContentUs";
 
 export default function Main() {
   return (
@@ -503,6 +504,7 @@ export default function Main() {
       <BestSellingProducts />
       <CoffeeClub />
       <LastBlogs />
+      <ContentUs />
     </main>
   );
 }

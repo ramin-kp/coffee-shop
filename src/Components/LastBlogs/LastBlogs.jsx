@@ -13,10 +13,10 @@ export default function LastBlogs() {
           id="#chevron-left-mini"
         />
         <div className="grid gap-5 grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 mb-8 md:mb[112px]  rounded-2xl">
-        <div className="flex gap-2.5 sm:block p-2.5 md:pb-2 bg-white dark:bg-zinc-700 shadow-normal group rounded-2xl">
+          <div className="flex gap-2.5 sm:block p-2.5 md:pb-2 bg-white dark:bg-zinc-700 shadow-normal group rounded-2xl">
             <div className="relative shrink-0 w-[130px] sm:w-auto h-[130px] sm:h-auto overflow-hidden rounded-2xl rounded-bl-4xl">
               <img
-                src="./images/blogs/blog-3.png"
+                src="/images/blogs/blog-3.png"
                 className="h-full sm:h-auto object-cover"
                 alt="blogs"
               />
@@ -34,7 +34,9 @@ export default function LastBlogs() {
               <div className="hidden sm:flex gap-5 pt-3">
                 <div className="hidden xl:block w-px h-[61px] bg-gray-200 dark:bg-white/10"></div>
                 <div className="flex flex-col ml-3 xl:ml-4 -mt-1 text-sm text-teal-600 dark:text-emerald-500 text-left">
-                  <span className="font-DanaBold text-base xl:text-2xl">21</span>
+                  <span className="font-DanaBold text-base xl:text-2xl">
+                    21
+                  </span>
                   <span>مرداد</span>
                   <span>1042</span>
                 </div>
@@ -55,7 +57,7 @@ export default function LastBlogs() {
           <div className="flex gap-2.5 sm:block p-2.5 md:pb-2 bg-white dark:bg-zinc-700 shadow-normal group rounded-2xl">
             <div className="relative shrink-0 w-[130px] sm:w-auto h-[130px] sm:h-auto overflow-hidden rounded-2xl rounded-bl-4xl">
               <img
-                src="./images/blogs/blog-4.png"
+                src="/images/blogs/blog-4.png"
                 className="h-full sm:h-auto object-cover"
                 alt="blogs"
               />
@@ -73,7 +75,9 @@ export default function LastBlogs() {
               <div className="hidden sm:flex gap-5 pt-3">
                 <div className="hidden xl:block w-px h-[61px] bg-gray-200 dark:bg-white/10"></div>
                 <div className="flex flex-col ml-3 xl:ml-4 -mt-1 text-sm text-teal-600 dark:text-emerald-500 text-left">
-                  <span className="font-DanaBold text-base xl:text-2xl">21</span>
+                  <span className="font-DanaBold text-base xl:text-2xl">
+                    21
+                  </span>
                   <span>مرداد</span>
                   <span>1042</span>
                 </div>
@@ -94,7 +98,7 @@ export default function LastBlogs() {
           <div className="flex gap-2.5 sm:block p-2.5 md:pb-2 bg-white dark:bg-zinc-700 shadow-normal group rounded-2xl">
             <div className="relative shrink-0 w-[130px] sm:w-auto h-[130px] sm:h-auto overflow-hidden rounded-2xl rounded-bl-4xl">
               <img
-                src="./images/blogs/blog-1.png"
+                src="/images/blogs/blog-1.png"
                 className="h-full sm:h-auto object-cover"
                 alt="blogs"
               />
@@ -112,7 +116,9 @@ export default function LastBlogs() {
               <div className="hidden sm:flex gap-5 pt-3">
                 <div className="hidden xl:block w-px h-[61px] bg-gray-200 dark:bg-white/10"></div>
                 <div className="flex flex-col ml-3 xl:ml-4 -mt-1 text-sm text-teal-600 dark:text-emerald-500 text-left">
-                  <span className="font-DanaBold text-base xl:text-2xl">21</span>
+                  <span className="font-DanaBold text-base xl:text-2xl">
+                    21
+                  </span>
                   <span>مرداد</span>
                   <span>1042</span>
                 </div>
@@ -133,7 +139,7 @@ export default function LastBlogs() {
           <div className="flex gap-2.5 sm:block p-2.5 md:pb-2 bg-white dark:bg-zinc-700 shadow-normal group rounded-2xl">
             <div className="relative shrink-0 w-[130px] sm:w-auto h-[130px] sm:h-auto overflow-hidden rounded-2xl rounded-bl-4xl">
               <img
-                src="./images/blogs/blog-2.png"
+                src="/images/blogs/blog-2.png"
                 className="h-full sm:h-auto object-cover"
                 alt="blogs"
               />
@@ -151,7 +157,9 @@ export default function LastBlogs() {
               <div className="hidden sm:flex gap-5 pt-3">
                 <div className="hidden xl:block w-px h-[61px] bg-gray-200 dark:bg-white/10"></div>
                 <div className="flex flex-col ml-3 xl:ml-4 -mt-1 text-sm text-teal-600 dark:text-emerald-500 text-left">
-                  <span className="font-DanaBold text-base xl:text-2xl">21</span>
+                  <span className="font-DanaBold text-base xl:text-2xl">
+                    21
+                  </span>
                   <span>مرداد</span>
                   <span>1042</span>
                 </div>
@@ -169,7 +177,6 @@ export default function LastBlogs() {
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </section>
