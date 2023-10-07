@@ -5,7 +5,7 @@ export default function Services() {
     <section className="services">
       <div className="container">
         <div className="flex items-center justify-between flex-wrap lg:flex-nowrap gap-y-11 child:w-1/2  text-zinc-700 dark:text-white lg:child:w-auto mb-12 md:mb-36">
-          <div class="flex flex-col sm:flex-row items-center  gap-y-5 md:gap-x-4 text-center lg:text-right">
+          <div className="flex flex-col sm:flex-row items-center  gap-y-5 md:gap-x-4 text-center lg:text-right">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="66"
@@ -87,13 +87,13 @@ export default function Services() {
               </defs>
             </svg>
             <div>
-              <h5 class="mb-1 md:mb-3.5 font-DanaBold text-sm md:text-lg/6 ">
+              <h5 className="mb-1 md:mb-3.5 font-DanaBold text-sm md:text-lg/6 ">
                 پشتیبانی شبانه روزی
               </h5>
-              <span class="text-sm md:text-sm">7 روز هفته ، 24 ساعته</span>
+              <span className="text-sm md:text-sm">7 روز هفته ، 24 ساعته</span>
             </div>
           </div>
-          <div class="flex flex-col sm:flex-row items-center gap-y-5 md:gap-x-4 text-center lg:text-right">
+          <div className="flex flex-col sm:flex-row items-center gap-y-5 md:gap-x-4 text-center lg:text-right">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="109"
@@ -187,13 +187,13 @@ export default function Services() {
               </defs>
             </svg>
             <div>
-              <h5 class="mb-1 md:mb-3.5 font-DanaBold text-sm md:text-lg/6 ">
+              <h5 className="mb-1 md:mb-3.5 font-DanaBold text-sm md:text-lg/6 ">
                 امکان تحویل اکسپرس
               </h5>
-              <span class="text-sm md:text-sm">ارسال بسته با سرعت باد</span>
+              <span className="text-sm md:text-sm">ارسال بسته با سرعت باد</span>
             </div>
           </div>
-          <div class="flex flex-col sm:flex-row items-center gap-y-5 md:gap-x-4 text-center lg:text-right">
+          <div className="flex flex-col sm:flex-row items-center gap-y-5 md:gap-x-4 text-center lg:text-right">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="52"
@@ -245,13 +245,13 @@ export default function Services() {
               ></path>
             </svg>
             <div>
-              <h5 class="mb-1 md:mb-3.5 font-DanaBold text-sm md:text-lg/6 ">
+              <h5 className="mb-1 md:mb-3.5 font-DanaBold text-sm md:text-lg/6 ">
                 رست تخصصی
               </h5>
-              <span class="text-sm md:text-sm">تازه برشته شده و با کیفیت</span>
+              <span className="text-sm md:text-sm">تازه برشته شده و با کیفیت</span>
             </div>
           </div>
-          <div class="flex flex-col sm:flex-row items-center gap-y-5 md:gap-x-4 text-center lg:text-right">
+          <div className="flex flex-col sm:flex-row items-center gap-y-5 md:gap-x-4 text-center lg:text-right">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="76"
@@ -297,10 +297,10 @@ export default function Services() {
               ></path>
             </svg>
             <div>
-              <h5 class="mb-1 md:mb-3.5 font-DanaBold text-sm md:text-lg/6 ">
+              <h5 className="mb-1 md:mb-3.5 font-DanaBold text-sm md:text-lg/6 ">
                 امکان تحویل اکسپرس
               </h5>
-              <span class="text-sm md:text-sm">ارسال بسته با سرعت باد</span>
+              <span className="text-sm md:text-sm">ارسال بسته با سرعت باد</span>
             </div>
           </div>
         </div>
