@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -13,6 +14,7 @@ export default function Footer() {
       </div>
 
       <div className="flex justify-between w-[95%] h-[500px] mx-auto px-4 md:px-0 py-8 md:py-11 text-gray-300">
+        {/* logo footer */}
         <div>
           <div className="flex gap-5 mb-4.5 md:mb-6 mt-[62px] ">
             <svg className="w-[57px] h-[54px]">
@@ -28,6 +30,53 @@ export default function Footer() {
             در ایران تبدیل شویم. می‌پنداریم که نظر مردم ایران و منطقه باید نسبت
             به کالای ایرانی بهبود یابد و در این راستا با اشتیاق می‌کوشیم.
           </p>
+        </div>
+        {/* quick access */}
+        <div className="mt-10 md:mt-[26px]">
+          <h1 className="mb-6 md:mt-7 font-DanaBold text-2xl text-white">
+            دسترسی سریع
+          </h1>
+          <div className="flex flex-col flex-wrap gap-x-10 md:gap-x-[64px] gap-y-4 md:gap-y-5 h-[172px]">
+            <Link className="flex gap-2 md:gap-3 items-center text-xl hover:text-orange-300 transition-colors ">
+              <span className="w-2 h-1 md:w-2.5 rounded-full bg-current"></span>
+              حریم خصوصی
+            </Link>
+            <Link className="flex gap-2 md:gap-3 items-center text-xl hover:text-orange-300 transition-colors ">
+              <span className="w-2 h-1 md:w-2.5 rounded-full bg-current"></span>
+              شرایط استفاده
+            </Link>
+            <Link className="flex gap-2 md:gap-3 items-center text-xl hover:text-orange-300 transition-colors ">
+              <span className="w-2 h-1 md:w-2.5 rounded-full bg-current"></span>
+              پرسش های متداول
+            </Link>
+            <Link className="flex gap-2 md:gap-3 items-center text-xl hover:text-orange-300 transition-colors ">
+              <span className="w-2 h-1 md:w-2.5 rounded-full bg-current"></span>
+              ضمانت نامه ها
+            </Link>
+            <Link className="flex gap-2 md:gap-3 items-center text-xl hover:text-orange-300 transition-colors ">
+              <span className="w-2 h-1 md:w-2.5 rounded-full bg-current"></span>
+              عودت کالا
+            </Link>
+            <Link className="flex gap-2 md:gap-3 items-center text-xl hover:text-orange-300 transition-colors ">
+              <span className="w-2 h-1 md:w-2.5 rounded-full bg-current"></span>
+              ثبت سفارش
+            </Link>
+            <Link className="flex gap-2 md:gap-3 items-center text-xl hover:text-orange-300 transition-colors ">
+              <span className="w-2 h-1 md:w-2.5 rounded-full bg-current"></span>
+              فرصت های شغلی
+            </Link>
+            <Link className="flex gap-2 md:gap-3 items-center text-xl hover:text-orange-300 transition-colors ">
+              <span className="w-2 h-1 md:w-2.5 rounded-full bg-current"></span>
+              ارتباط با ما
+            </Link>
+          </div>
+        </div>
+        {/* Contact */}
+        <div className="footer__contact">
+            <Link className="footer__contact-link"></Link>
+            <ul className="footer__contact-list">
+                <li className="footer__contact-item"></li>
+            </ul>
         </div>
       </div>
     </footer>
